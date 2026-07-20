@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://automobiliuprieziurakaunas.lt/sitemap.xml

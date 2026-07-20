@@ -275,8 +275,10 @@ p{text-wrap:pretty}
 /* ---------- estimate dialog ---------- */
 .est-back{position:fixed;inset:0;z-index:80;background:rgba(7,20,30,.52);
   backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
-  display:grid;place-items:center;padding:1.2rem;opacity:0;transition:opacity .3s}
-.est-back.on{opacity:1}
+  display:grid;place-items:center;padding:1.2rem;opacity:0;pointer-events:none;
+  transition:opacity .3s}
+.est-back[hidden]{display:none}
+.est-back.on{opacity:1;pointer-events:auto}
 .est{width:min(560px,100%);max-height:88dvh;overflow:auto;background:#fff;border-radius:14px;
   padding:clamp(1.5rem,3vw,2.2rem);box-shadow:0 30px 90px rgba(5,20,30,.4);
   transform:translateY(16px);transition:transform .35s var(--ease)}
